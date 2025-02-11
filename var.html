@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Var() Colors</title>
+</head>
+<style>
+    :root {
+        --red-color: #d10;
+        --black-color: #000;
+        --fucsia-color: #f4f;
+    }
+
+    h2 {
+        color: var(--red-color);
+    }
+
+    body {
+        background-color: var(--black-color);
+    }
+
+    .title {
+        background-color: var(--fucsia-color);
+    }
+</style>
+
+<body>
+    <div class="title">
+    <h2>This title is red</h2>
+    </div>
+</body>
+</html>
